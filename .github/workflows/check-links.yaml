@@ -20,7 +20,7 @@ jobs:
       with:
         use-quiet-mode: no  # was: yes
         use-verbose-mode: yes  # was: no
-        folder-path: 'docs'  # was: 'artifacts/'
+        folder-path: 'docs/'  # was: 'artifacts/'
         max-depth: -1
         file-extension: '.html'
         base-branch: 'main'
