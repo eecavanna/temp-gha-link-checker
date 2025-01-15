@@ -29,3 +29,5 @@ jobs:
         echo ${{ steps.linkcheck.outputs }}
         echo "--- B ---"
         echo ${{ steps.linkcheck.outputs.* }}
+        echo "--- C ---"
+        echo ${{ join(steps.linkcheck.outputs.*, '\n') }}
