@@ -28,5 +28,4 @@ jobs:
         echo "--- A ---"
         echo ${{ steps.linkcheck.outputs }}
         echo "--- B ---"
-        echo ${{ steps.linkcheck.outputs.mlc-result }}
-        echo "--- C ---"
+        echo ${{ steps.linkcheck.outputs.* }}
