@@ -24,3 +24,11 @@ jobs:
         max-depth: -1
         file-extension: '.md'
         base-branch: 'main'
+
+    - name: Do something with the link checker output
+      run: |
+        echo "--- A ---"
+        echo ${{ steps.linkcheck.outputs }}
+        echo "--- B ---"
+        echo ${{ steps.linkcheck.outputs.mlc-result }}
+        echo "--- C ---"
