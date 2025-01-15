@@ -13,15 +13,13 @@ jobs:
     - uses: actions/checkout@v3
 
     # Initially copied from: https://github.com/microbiomedata/docs/blob/30b3adcf15cea6286a92d1a1712b822b3b5c8f06/.github/workflows/check-links-and-spelling.yml#L29-L39
+    # Reference: https://github.com/gaurav-nelson/github-action-markdown-link-check
     - name: Check links  # was: Run Markdown Link Check
       uses: gaurav-nelson/github-action-markdown-link-check@v1 # Source: https://github.com/tcort/markdown-link-check
       id: linkcheck
       continue-on-error: true
       with:
-        use-quiet-mode: no  # was: yes
-        use-verbose-mode: yes  # was: no
-        folder-path: 'docs/'  # was: 'artifacts/'
-        max-depth: -1
+        use-verbose-mode: 'yes'
         file-extension: '.md'
         base-branch: 'main'
 
