@@ -22,5 +22,5 @@ jobs:
         use-verbose-mode: yes  # was: no
         folder-path: 'docs/'  # was: 'artifacts/'
         max-depth: -1
-        file-extension: '.html'
+        file-extension: '.md'
         base-branch: 'main'
